@@ -3,6 +3,7 @@
 
 <head>
     <script type="text/javascript" src="/brython/brython.js"></script>
+    <script type="text/python" src="/python.py"></script>
 </head>
 
 <body onload="brython()">
@@ -11,16 +12,7 @@
 
 <p>I'm hosted with GitHub Pages.</p>
 
-<script type="text/python">
-from browser import document, alert
-
-def echo(event):
-    alert(document["zone"].value)
-
-document['mybutton'].bind('click', echo)
-</script>
-
-<input id="zone"><button id="mybutton">click !</button>
+<button id="mybutton">click !</button>
 
 </body>
 </html>
